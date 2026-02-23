@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: booking-api
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    port: ${RABBIT_PORT:5672}
+    username: ${RABBIT_USER:guest}
+    password: ${RABBIT_PASS:guest}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+server:
+  port: 8080
+logging:
+  level:
+    com.vertexspace.bookingapi: INFO
